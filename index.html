@@ -26,8 +26,10 @@
     <meta property="og:url" content="sakuracad.app">
     <meta property="og:description" content="SakuraCAD is the perfect Computer Aided Dispatch System for Roleplay Communities using the FiveM Modification for Grand Theft Auto 5. Get setup in under 10 minutes on a budget as low as £3.99">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/sacura-head">
+    <meta property="og:image" content="https://sakuracad.app/assets/sacura-head.png">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/interaction.js"></script>
 </head>
 
 <body>
@@ -74,8 +76,8 @@
         </div>
     </section>
     
-    <div class="notification is-danger is-light">
-      <button class="delete"></button>
+    <div class="notification is-danger is-light" id="notification">
+      <button class="delete" id="notification-hide"></button>
       This page is a Work in Progress! As such bugs may appear and things might not look exactly how they should be, don't worry, we're working on it!
     </div>
     
