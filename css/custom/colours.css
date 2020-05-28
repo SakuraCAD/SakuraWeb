@@ -1,0 +1,15 @@
+.tickle-me-pink {
+    background-color: #EA769F;
+}
+
+.dogwood-rose {
+    background-color: #CA2A68;
+}
+
+.pink-gradient {
+    background: rgb(197,29,95);
+    background: -moz-linear-gradient(24deg, rgba(197,29,95,1) 0%, rgba(218,80,131,1) 35%, rgba(244,143,177,1) 100%);
+    background: -webkit-linear-gradient(24deg, rgba(197,29,95,1) 0%, rgba(218,80,131,1) 35%, rgba(244,143,177,1) 100%);
+    background: linear-gradient(24deg, rgba(197,29,95,1) 0%, rgba(218,80,131,1) 35%, rgba(244,143,177,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c51d5f",endColorstr="#f48fb1",GradientType=1);
+}
