@@ -1,6 +1,13 @@
-$(function(){
-    $("#notification-hide").click(function(){
+$(function() {
+    $("#notification-hide").click(function() {
         $("#notification").hide()
     });
-  
-  });
+
+    $(".navbar-burger").click(function() {
+
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+
+    });
+
+});
