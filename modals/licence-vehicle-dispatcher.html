@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SakuraCAD | Vehicle Licence Results</title>
+    <link rel="stylesheet" href="../css/darkmode.css">
+    <!--https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css-->
+    <link rel="stylesheet" href="css/custom/colours.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/licence-modal-test.js"></script>
+</head>
+
+<body>
+    <div class="modal" id="licenceplate-success">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Vehicle Results for LICENCE_PLATE</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="subtitle" style="margin-bottom: .5rem!important;">Vehicle Owner</h3>
+                        <p><strong>Mr. Crusading Corona</strong></p>
+                        <br>
+                        <h3 class="subtitle" style="margin-bottom: .5rem!important;">Vehicle History</h3>
+                        <div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Description</th>
+                                        <th>Officer</th>
+                                        <th>Date & Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Traffic Citation of $100 for Speeding</td>
+                                        <td>Commissioner Friz</td>
+                                        <td>18/05/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Traffic Citation of $900 for Hitting Elderly Women</td>
+                                        <td>Commissioner Friz</td>
+                                        <td>18/05/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Vehicle Impounded</td>
+                                        <td>Commissioner Friz</td>
+                                        <td>18/05/2020</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div class="tags has-addons">
+                            <span class="tag is-info">Vehicle Make</span>
+                            <span class="tag is-warning">Truffade</span>
+                        </div>
+                        <div class="tags has-addons">
+                            <span class="tag is-info">Vehicle Model</span>
+                            <span class="tag is-warning">Adder</span>
+                        </div>
+                        <div class="tags has-addons">
+                            <span class="tag is-info">Insurance</span>
+                            <span class="tag is-danger">Invalid</span>
+                        </div>
+                        <div class="tags has-addons">
+                            <span class="tag is-info">Stolen</span>
+                            <span class="tag is-danger">No</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-info modal-closeme" id="modal-close">Return</button>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal" id="licenceplate-fail">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Vehicle Results for LICENCE_PLATE</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="subtitle" style="margin-bottom: .5rem!important;">Failed to Find Licence Plate LICENCE_PLATE</h3>
+                        <p><strong>This Vehicle is Not Registered with the Department of Motor Vehicles!</strong></p>
+                        <br>
+                        <h3 class="subtitle" style="margin-bottom: .5rem!important;">Next Steps</h3>
+                        <p><strong>Ensure the licence plate is entered correctly before assuming illegal conduct!</strong></p>
+                    </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-info modal-closeme" id="modal-close">Return</button>
+            </footer>
+            </div>
+        </div>
+
+        <div class="buttons has-addons is-centered">
+            <button class="button" id="licence-plate-fail">View Licence Plate Fail</button>
+            <button class="button" id="licence-plate-pass">View Licence Plate Success</button>
+            <button class="button" id="licence-plate-invalid">View Licence Plate This Doesn't Work Yet</button>
+        </div>
+
+</body>
+
+</html>
