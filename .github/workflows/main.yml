@@ -15,4 +15,6 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /var/www/sakuracad.app
+          git config --global user.name ${{secrets.ghusername}}
+          git config --global user.password ${{ secrets.ghpassword }}
           git pull
