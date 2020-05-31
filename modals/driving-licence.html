@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SakuraCAD | Vehicle Licence Results</title>
+    <link rel="stylesheet" href="../css/darkmode.css">
+    <!--https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css-->
+    <link rel="stylesheet" href="css/custom/colours.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/licence-modal-test.js"></script>
+</head>
+
+<body>
+    <div class="modal" id="licenceplate-success">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">State of San Andreas Department of Motor Vehicles<br>Driving Licence Bureau</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="subtitle" style="margin-bottom: .5rem!important;">Full Name</h3>
+                        <p>USER_REAL_NAME</p>
+                        <br>
+                        <h3 class="subtitle" style="margin-bottom: .5rem!important;">Address</h3>
+                        <p>ADDRESS</p>
+                        <br>
+                        <h3 class="subtitle" style="margin-bottom: .5rem!important;">Sex</h3>
+                        <p>GENDER</p>
+                        <br>
+                        <h3 class="subtitle" style="margin-bottom: .5rem!important;">Drivers ID</h3>
+                        <p>STEAM_ID</p>
+                        <br>
+                    </div>
+                    <div class="column has-text-centered">
+                        <img src="../assets/baur.png">
+                    </div>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-info modal-closeme" id="modal-close">Return to User Information</button>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal" id="licenceplate-fail">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">No Licence Detected</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="subtitle" style="margin-bottom: .5rem!important;">Failed to Find a Driving Licence</h3>
+                        <p><strong>This User does not have a driving licence</strong></p>
+
+                    </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-info modal-closeme" id="modal-close">Return</button>
+            </footer>
+            </div>
+        </div>
+
+        <div class="buttons has-addons is-centered">
+            <button class="button" id="licence-plate-fail">View User Fail</button>
+            <button class="button" id="licence-plate-pass">View User Success</button>
+        </div>
+
+</body>
+
+</html>
