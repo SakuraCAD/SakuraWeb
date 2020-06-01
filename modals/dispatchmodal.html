@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SakuraCAD | Vehicle Licence Results</title>
+    <link rel="stylesheet" href="https://content.onepixel.dev/sakuracad/css/darkmode.css">
+    <!--https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css-->
+    <link rel="stylesheet" href="css/custom/colours.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://content.onepixel.dev/sakuracad/js/licence-modal-test.js"></script>
+</head>
+
+<body>
+    <div class="modal" id="licenceplate-success">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title"><strong>Murder</strong> [ID : 3833325]</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="subtitle" style="margin-bottom: .5rem!important;">Full Name</h3>
+                        <p><strong>Mr. Firstname <strong>Lastname</strong></p>
+                        <br>
+                        <h3 class="subtitle" style="margin-bottom: .5rem!important;">Flags and Actions</h3>
+                        <div class="tag">
+                            <span class="tag is-warning">Owns 3 Vehicles</span>
+                        </div>
+                        <div class="tag">
+                            <span class="tag is-warning">Not Wanted</span>
+                        </div>
+                        <div class="tag">
+                            <span class="tag is-warning">Owns 0 Aircraft</span>
+                        </div>
+
+                    </div>
+                    <div class="column has-text-centered">
+                        <div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Description</th>
+                                        <th>Officer</th>
+                                        <th>Date & Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Arrested for <b>Rioting</b></td>
+                                        <td>Commissioner Friz</td>
+                                        <td>31/05/2020</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-info modal-closeme" id="modal-close">Return</button>
+                <button class="button is-info modal-closeme" id="modal-close">View Drivers Licence</button>
+                <button class="button is-warning modal-closeme" id="modal-close">Issue Citation</button>
+                <button class="button is-danger modal-closeme" id="modal-close">Initiate Arrest</button>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal" id="licenceplate-fail">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Search Results for USER_SEARCH</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="subtitle" style="margin-bottom: .5rem!important;">Failed to Find USER_SEARCH</h3>
+                        <p><strong>This User is not registered on the CAD!</strong></p>
+
+                    </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-info modal-closeme" id="modal-close">Return</button>
+            </footer>
+            </div>
+        </div>
+
+        <div class="buttons has-addons is-centered">
+            <button class="button" id="licence-plate-fail">View User Fail</button>
+            <button class="button" id="licence-plate-pass">View User Success</button>
+        </div>
+
+</body>
+
+</html>
