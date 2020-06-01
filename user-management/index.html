@@ -31,6 +31,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://content.onepixel.dev/sakuracad/js/interaction.js"></script>
 
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        #wrapper {
+            flex: 1;
+        }
+    </style>
+
     <!-- Matomo -->
     <script type="text/javascript">
         var _paq = window._paq || [];
@@ -111,90 +123,91 @@
         </div>
     </div>
 
+    <div id="wrapper">
 
-    <div class="columns" style="margin: .5rem;">
-        <div class="column">
-            <div class="box has-text-centered">
-                <p class="title is-3">My Payment Information</p>
-                <p class="subtitle is-5">View and Manage Cards and Payments</p>
-                <hr>
-                <div class="columns">
-                    <div class="column">
-                        <p>Your Billing Date</p>
+        <div class="columns" style="margin: .5rem;">
+            <div class="column">
+                <div class="box has-text-centered">
+                    <p class="title is-3">My Payment Information</p>
+                    <p class="subtitle is-5">View and Manage Cards and Payments</p>
+                    <hr>
+                    <div class="columns">
+                        <div class="column">
+                            <p>Your Billing Date</p>
+                        </div>
+                        <div class="column">
+                            <p>Our Payment Vendor <strong>Paddle</strong> will take £4000 from you on the 20th of March 2021</p>
+                        </div>
                     </div>
-                    <div class="column">
-                        <p>Our Payment Vendor <strong>Paddle</strong> will take £4000 from you on the 20th of March 2021</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="columns">
-                    <div class="column">
-                        <button class="button is-danger">Request a Cancellation</button>
-                    </div>
-                    <div class="column">
-                        <button class="button is-success">Upgrade Your Plan</button>
+                    <hr>
+                    <div class="columns">
+                        <div class="column">
+                            <button class="button is-danger">Request a Cancellation</button>
+                        </div>
+                        <div class="column">
+                            <button class="button is-success">Upgrade Your Plan</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="column">
-            <div class="box has-text-centered">
-                <p class="title is-3">My Information</p>
-                <p class="subtitle is-5">Change your Email and Passwords</p>
-                <hr>
-                <div class="columns">
-                    <div class="column">
-                        <p>Your Username</p>
+            <div class="column">
+                <div class="box has-text-centered">
+                    <p class="title is-3">My Information</p>
+                    <p class="subtitle is-5">Change your Email and Passwords</p>
+                    <hr>
+                    <div class="columns">
+                        <div class="column">
+                            <p>Your Username</p>
+                        </div>
+                        <div class="column">
+                            <p>realDonaldTrump</p>
+                        </div>
                     </div>
-                    <div class="column">
-                        <p>realDonaldTrump</p>
+                    <hr>
+                    <div class="columns">
+                        <div class="column">
+                            <p>Your Email</p>
+                        </div>
+                        <div class="column">
+                            <p>test******@onepixel.dev</p>
+                        </div>
                     </div>
-                </div>
-                <hr>
-                <div class="columns">
-                    <div class="column">
-                        <p>Your Email</p>
-                    </div>
-                    <div class="column">
-                        <p>test******@onepixel.dev</p>
-                    </div>
-                </div>
-                <hr>
+                    <hr>
 
-                <div class="columns">
-                    <div class="column">
-                        <button class="button is-success">Change your Username</button>
-                    </div>
-                    <div class="column">
-                        <button class="button is-success">Change your Email</button>
-                    </div>
-                    <div class="column">
-                        <button class="button is-success">Change Your Password</button>
+                    <div class="columns">
+                        <div class="column">
+                            <button class="button is-success">Change your Username</button>
+                        </div>
+                        <div class="column">
+                            <button class="button is-success">Change your Email</button>
+                        </div>
+                        <div class="column">
+                            <button class="button is-success">Change Your Password</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="column">
-            <div class="box has-text-centered">
-                <p class="title is-3">My Communities</p>
-                <p class="subtitle is-5">View the Communities you are a member of or have been invited to</p>
-                <hr>
-                <div class="columns">
-                    <div class="column">
-                        <p>friz's test RP</p>
-                    </div>
-                    <div class="column">
-                        <button class="button is-info">Visit</button>
-                        <button class="button is-danger">Leave</button>
+            <div class="column">
+                <div class="box has-text-centered">
+                    <p class="title is-3">My Communities</p>
+                    <p class="subtitle is-5">View the Communities you are a member of or have been invited to</p>
+                    <hr>
+                    <div class="columns">
+                        <div class="column">
+                            <p>friz's test RP</p>
+                        </div>
+                        <div class="column">
+                            <button class="button is-info">Visit</button>
+                            <button class="button is-danger">Leave</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 
-
-    <footer class="footer">
+    <footer class="footer" style="">
         <div class="content has-text-centered">
             <p>
                 Powered By <strong>SakuraCAD</strong>
